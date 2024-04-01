@@ -168,6 +168,13 @@ OpenSSL 3.3
 
    *Alexandr Nedvedicky*
 
+ * Added support to build Position Independent Executables (PIE). Configuration
+   option `enable-pie` configures the cflag '-fPIE' and ldflag '-pie' to
+   support Address Space Layout Randomization (ASLR) in the openssl executable,
+   removes reliance on external toolchain configurations.
+
+   *Craig Lorentzen*
+
 OpenSSL 3.2
 -----------
 
